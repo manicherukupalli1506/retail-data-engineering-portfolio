@@ -1,11 +1,31 @@
 # Retail Data Engineering Pipeline
 
-An end-to-end retail data engineering project built using Microsoft Azure.
 
-The project combines customer data from an API with product, store and transaction data from a SQL database. Azure Data Factory is used for data ingestion, Azure Data Lake Storage Gen2 is used for storage, and Azure Databricks with PySpark is used for data transformation.
+This project implements an automated retail data engineering pipeline using Python, Pandas, SQL, and SQLite.
+
+The pipeline validates and cleans retail sales data, removes duplicates, performs incremental database loading, executes SQL analysis, and runs automated data quality tests.
+
+Pipeline execution is tracked through structured logging. The repository also includes Azure-oriented architecture documentation for potential cloud integration.
+
 
 ## Architecture
 
+```mermaid
+flowchart TD
+    A[Retail Sales CSV Data] --> B[Python Data Validation]
+    B --> C[Pandas Data Cleaning]
+    C --> D[Incremental SQLite Loading]
+    D --> E[SQL Sales Analysis]
+    E --> F[Data Quality Tests]
+    F --> G[Pipeline Logging]
+```
+
+
+### Proposed Azure Cloud Architecture
+
+The following architecture represents a potential future cloud deployment using Azure Data Factory, Azure Data Lake Storage Gen2, and Azure Databricks with PySpark.
+
+This is a proposed cloud extension of the currently implemented Python and SQLite ETL pipeline.
 ```text
 API + SQL Database
         ↓
