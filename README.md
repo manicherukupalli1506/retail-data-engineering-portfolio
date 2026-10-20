@@ -148,3 +148,37 @@ python -m pytest tests/ -v
 ---
 
 **Pipeline:** API + SQL → Azure Data Factory → ADLS Gen2 Bronze → Databricks/PySpark → Delta Silver → Delta Gold
+## Installation and Setup
+
+Clone the repository and open the project folder.
+
+Install dependencies:
+
+python -m pip install -r requirements.txt
+
+## Run the Pipeline
+
+python run_pipeline.py
+
+## Automated Testing
+
+The pipeline runs four data quality tests:
+- Duplicate record validation
+- Missing value validation
+- Positive sales validation
+- Record count validation
+
+## Pipeline Logging
+
+Pipeline execution logs are saved in:
+logs/pipeline.log
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- SQLite
+- SQL
+- Git and GitHub
+- Python unittest
