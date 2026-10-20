@@ -109,14 +109,40 @@ I learned how to:
 * Create calculated columns and aggregations
 * Store transformed data using Delta Lake
 * Build an end-to-end cloud data engineering workflow
+## Testing and Validation
 
+The Retail Data Engineering Pipeline was
+successfully tested using Python and pytest.
+
+### Automated Tests
+- Duplicate record validation: PASSED
+- Missing value validation: PASSED
+- Positive sales validation: PASSED
+- Record count validation: PASSED
+
+**Test Results:** 4 tests passed.
+
+### Pipeline Execution Results
+- Successfully loaded 8 records into SQLite
+- Executed SQL queries for sales analysis
+- Calculated total revenue of $3,760
+- Generated product-level and category-level sales summaries
+- Completed the local pipeline without errors
+
+### Run the Project
+
+Run the complete pipeline:
+
+python run_pipeline.py
+
+Run automated tests:
+
+python -m pytest tests/ -v
 ## Future Improvements
 
-* Add data quality checks
 * Add incremental data ingestion
 * Add pipeline monitoring and error handling
-* Use Azure Key Vault or Databricks secret management for credentials
-* Add automated testing
+* Use Azure Key Vault or Databricks secret management for credential
 * Connect the Gold layer to Power BI
 
 ---
