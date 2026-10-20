@@ -1,0 +1,36 @@
+
+# Python cache files
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+*.log
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+# Azure credentials and secrets
+*.pem
+*.pfx
+*.secret
+.env.*
+!.env.example

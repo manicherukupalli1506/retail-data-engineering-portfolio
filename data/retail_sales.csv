@@ -1,0 +1,12 @@
+
+order_id,product_name,category,quantity,price
+1001,Laptop,Electronics,2,750
+1002,Mouse,Electronics,5,25
+1003,Keyboard,Electronics,3,45
+1004,Chair,Furniture,1,150
+1005,Desk,Furniture,2,300
+1006,Monitor,Electronics,1,200
+1007,Laptop,Electronics,1,750
+1008,Mouse,Electronics,,25
+1009,Chair,Furniture,2,150
+1009,Chair,Furniture,2,150
